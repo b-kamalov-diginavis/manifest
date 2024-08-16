@@ -1,5 +1,52 @@
-.Fill {
-  position: absolute;
+body {
+  background-color: azure;
+  color: black;
+  padding: 2rem 4rem;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  pointer-events: none;
   inset: 0;
-  border: currentColor 2px solid;
+  border: cadetblue 6px solid;
+}
+
+.Inset0 {
+  max-width: max-content;
+  border-bottom: cadetblue 6px solid;
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  pointer-events: none;
+  inset: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  border: orange 6px dashed;
+}
+
+.SafeAreaInset {
+  max-width: max-content;
+  border-bottom: orange 6px dashed;
+}
+
+.Browser {
+  display: block;
+}
+
+.WebApp {
+  display: none;
+}
+
+@media (display-mode: standalone) or (display-mode: fullscreen) {
+  .Browser {
+    display: none;
+  }
+
+  .WebApp {
+    display: block;
+  }
 }
