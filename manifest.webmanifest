@@ -1,0 +1,16 @@
+{
+    "name": "AVTM",
+    "short_name": "AVTM",
+    "start_url": "/manifest",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "lang": "ru",
+    "scope": "/manifest",
+    "icons": [
+        {
+            "src": "/avtm-icon.svg",
+            "type": "image/svg+xml",
+            "sizes": "48x48 64x64 72x72 96x96 128x128 256x256"
+        }
+    ]
+}
