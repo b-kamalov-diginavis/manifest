@@ -15,11 +15,19 @@
       href="./manifest.webmanifest"
       type="application/manifest+json"
     />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" href="../icon_144.png" />
+    <link rel="apple-touch-startup-image" href="../icon_144.png" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <p>viewport-fit=contain (viewport meta tag)</p>
     <p>"display": "fullscreen" (webmanifest)</p>
+    <p>black-translucent (apple-mobile-web-app-status-bar-style meta tag)</p>
     <p class="WebApp">Opened as Web App</p>
     <p class="Browser">Opened in browser</p>
     <hr />

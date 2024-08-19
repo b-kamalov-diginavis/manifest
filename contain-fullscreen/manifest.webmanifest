@@ -4,8 +4,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#becbdb",
+  "theme_color": "#becbdb",
   "lang": "en",
   "icons": [
     {
