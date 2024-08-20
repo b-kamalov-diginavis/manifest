@@ -1,0 +1,18 @@
+{
+  "short_name": "cov stand sb",
+  "name": "cover standalone status bar",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#becbdb",
+  "theme_color": "#becbdb",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "../icon_144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "maskable"
+    }
+  ]
+}
