@@ -8,7 +8,7 @@
     />
     <meta http-equiv="Cache-control" content="no-cache" />
     <meta name="color-scheme" content="light dark" />
-    <title>cover fullscreen</title>
+    <title>cover standalone with 100lvh fix</title>
     <link rel="stylesheet" href="../styles.css" />
     <link
       rel="manifest"
@@ -23,11 +23,24 @@
       content="black-translucent"
     />
     <meta name="theme-color" content="#becbdb" />
+    <style>
+      @media (display-mode: standalone) {
+        body {
+          min-height: 100lvh;
+        }
+      }
+    </style>
   </head>
   <body>
     <p>viewport-fit=cover (viewport meta tag)</p>
-    <p>"display": "fullscreen" (webmanifest)</p>
+    <p>"display": "standalone" (webmanifest)</p>
     <p>black-translucent (apple-mobile-web-app-status-bar-style meta tag)</p>
+    <p><pre>
+@media (display-mode: standalone) {
+  body {
+    min-height: 100lvh;
+  }
+}</pre></p>
     <p class="WebApp">Opened as Web App</p>
     <p class="Browser">Opened in browser</p>
     <hr />

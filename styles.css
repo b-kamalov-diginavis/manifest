@@ -4,6 +4,8 @@ body {
   background-color: azure;
   background-position: center;
   color: black;
+  box-sizing: border-box;
+  margin: 0;
   padding: calc(env(safe-area-inset-top, 0px) + 0.5rem)
     calc(env(safe-area-inset-right, 0px) + 2ch)
     calc(env(safe-area-inset-bottom, 0px) + 0.5rem)
